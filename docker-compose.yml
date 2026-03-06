@@ -21,6 +21,10 @@ services:
    ports:
      - "9000:80"
 
+ test:
+    image: thebokichan/test:latest
+    ports:
+      - "8000:80"
 
 volumes:
  mysql_data:
