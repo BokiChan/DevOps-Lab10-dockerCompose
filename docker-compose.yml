@@ -19,7 +19,7 @@ services:
 #     depends_on:
 #       - mongo
   nginx:
-     image: nginx:latest
+     image: thebokichan/dockercompose:latest
      ports:
        - "8089:80"
      volumes:
