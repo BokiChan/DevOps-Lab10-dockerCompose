@@ -52,4 +52,4 @@ jobs:
             echo ${{ secrets.DOCKER_HUB_TOKEN }} | docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
             docker compose down
             docker compose up -d
-            rm -rf /home/ubuntu/dockerLab10
+            sudo rm -rf /home/ubuntu/dockerLab10
