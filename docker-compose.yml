@@ -1,25 +1,6 @@
 services:
-#  mongo:
-#     image: mongo:latest
-#     restart: always
-#     ports:
-#       - "27017:27017"
-#     environment:
-#       MONGO_INITDB_ROOT_USERNAME: admin
-#       MONGO_INITDB_ROOT_PASSWORD: password
-    
-#  mongo-express:
-#     image: mongo-express:latest
-#     restart: always
-#     ports:
-#       - "8081:8081"
-#     environment:
-#       ME_CONFIG_MONGODB_SERVER: mongo
-#       ME_CONFIG_MONGODB_ENABLE_ADMIN: "true"
-#     depends_on:
-#       - mongo
   nginx:
-     image: thebokichan/dockercompose:latest
+     image: nginx:latest
      ports:
        - "8089:80"
      volumes:
