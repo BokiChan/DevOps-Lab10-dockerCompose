@@ -1,8 +1,8 @@
 services:
   nginx:
      image: nginx:latest
-     ports:
-       - "8089:80"
      volumes:
        - ./html:/usr/share/nginx/html
+     ports:
+       - "8089:80"
      restart: unless-stopped
