@@ -18,9 +18,10 @@ services:
 #       ME_CONFIG_MONGODB_ENABLE_ADMIN: "true"
 #     depends_on:
 #       - mongo
-  application:
-    image: thebokichan/lab11_q6:latest
-    pull_policy: always
-    ports:
-      - "8088:8080"
-    restart: unless-stopped
+  nginx:
+     image: nginx:latest
+     ports:
+       - "8089:80"
+     volumes:
+       - ./html:/usr/share/nginx/html
+     restart: unless-stopped

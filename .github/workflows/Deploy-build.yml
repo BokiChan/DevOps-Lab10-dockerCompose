@@ -28,7 +28,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/lab11_q6:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/dockercompose:latest
       
       - name: Copy file via ssh password
         uses: appleboy/scp-action@v1
